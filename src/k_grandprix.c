@@ -31,8 +31,8 @@ struct grandprixinfo grandprixinfo;
 --------------------------------------------------*/
 UINT8 K_BotStartingDifficulty(SINT8 value)
 {
-	// startingdifficulty: Easy = 3, Normal = 6, Hard = 9
-	SINT8 difficulty = (value + 1) * 3;
+	// startingdifficulty: Easy = 1, Normal = 3, Hard = 6
+	SINT8 difficulty = (value) * 3;
 
 	if (difficulty > MAXBOTDIFFICULTY)
 	{
@@ -642,7 +642,7 @@ void K_IncreaseBotDifficulty(player_t *bot)
 			rankNudge = 0;
 			break;
 		case GRADE_A:
-			if (grandprixinfo.gp && grandprixinfo.gamespeed == KARTSPEED_EASY)
+			if (grandprixinfo.gp && (grandprixinfo.gamespeed == KARTSPEED_EASY || grandprixinfo.gamespeed == KARTSPEED_NORMAL))
 				rankNudge = 0;
 			else
 				rankNudge = 1;
