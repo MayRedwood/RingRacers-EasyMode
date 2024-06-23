@@ -5692,7 +5692,7 @@ static char *M_GetGameplayMode(void)
 			return va("Vicious");
 		if (grandprixinfo.gamespeed == KARTSPEED_NORMAL)
 			return va("Intense");
-		return va("Relaxed");
+		return va("Relaxad");
 	}
 
 	if (cv_4thgear.value)
