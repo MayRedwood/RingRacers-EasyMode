@@ -69,7 +69,7 @@ INT32 K_StartingBumperCount(void)
 				case KARTSPEED_HARD:
 					return (grandprixinfo.masterbots == true) ? 0 : 1;
 				case KARTSPEED_NORMAL:
-					return 2;
+					return 3;
 				case KARTSPEED_EASY:
 					return 3;
 			}
