@@ -14403,9 +14403,9 @@ tic_t K_TimeLimitForGametype(void)
 			if (grandprixinfo.gp)
 			{
 				if (grandprixinfo.gamespeed == KARTSPEED_EASY)
-					return 30*TICRATE;
+					return 60*TICRATE;
 			}
-			return 20*TICRATE;
+			return 40*TICRATE;
 		}
 
 		return gametypeDefault;
