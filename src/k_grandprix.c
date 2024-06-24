@@ -869,7 +869,7 @@ void K_PlayerLoseLife(player_t *player)
 		return;
 	}
 
-	player->lives--;
+	//player->lives--;
 	player->pflags |= PF_LOSTLIFE;
 }
 
