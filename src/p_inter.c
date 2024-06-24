@@ -1216,14 +1216,14 @@ static void P_AddBrokenPrison(mobj_t *target, mobj_t *inflictor, mobj_t *source)
 				}
 				else if (grandprixinfo.gamespeed == KARTSPEED_NORMAL)
 				{
-					clamptime = 20*TICRATE;
-					mintime = 5*TICRATE;
+					clamptime = 45*TICRATE;
+					mintime = 20*TICRATE;
 				}
 				else if (grandprixinfo.gamespeed == KARTSPEED_EASY)
 				{
 					// "I think Easy Mode should be about Trying Not To Kill Your Self" -VelocitOni
-					clamptime = 45*TICRATE;
-					mintime = 20*TICRATE;
+					clamptime = 60*TICRATE;
+					mintime = 30*TICRATE;
 				}
 			}
 
